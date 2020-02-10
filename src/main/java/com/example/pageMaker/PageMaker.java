@@ -1,16 +1,16 @@
 package com.example.pageMaker;
 
 public class PageMaker {
-    private int totalcount; //전체 게시물 개수
+    private int totalcount;     //전체 게시물 개수
     private int countlist;
-    private int pagenum;    //첫페이지를 표시하기 위함, 페이지 번호를 나타낸다
+    private int pagenum;        //첫페이지를 표시하기 위함, 페이지 번호를 나타낸다
     private int contentnum=10;  //한페이지에 몇개 보일지
     private int startPage=1;    //beginpage 디폴트 1
-    private int endPage=5;  //endpage 디폴트 5
+    private int endPage=5;      //endpage 디폴트 5
     private boolean prev=false; //이전 페이지 화살표
-    private boolean next;   //다음 페이지 화살표
-    private int currentblock=1;
-    private int lastblock;
+    private boolean next;       //다음 페이지 화살표
+    private int currentblock=1; //현재 페이지 블록
+    private int lastblock;      // 마지막 페이지 블록
 
     public boolean isPrev() {
         return prev;

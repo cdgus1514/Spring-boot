@@ -19,7 +19,7 @@ public class PageMakerService {
         pageMaker.setLastblock(pageMaker.getTotalcount());      // 마지막 블록 번호를 전체 게시글 수를 통해 지정
         pageMaker.prevnext(pageNum);            // 현재 페이지 번호로 화살표를 나타낼지 정함
         pageMaker.setStartPage(pageMaker.getCurrentblock());    // 시작 페이지를 페이지 블록 번호로 정함
-        pageMaker.setEndPage(pageMaker.getLastblock(), pageMaker.getCurrentblock());    // 마지막 페이지를 마지막 페이지 블록과 현재 페이지 블록 번호로 정함
+        pageMaker.setEndPage(pageMaker.getLastblock(), pageMaker.getCurrentblock());    // 마지막 페이지를 마지막 페이지 블록과 현재 페이지 블록 번호로 정함);
 
         return pageMaker;
     }

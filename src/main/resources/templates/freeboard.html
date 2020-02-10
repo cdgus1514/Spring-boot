@@ -40,6 +40,12 @@
       .row.content {height:auto;}
     }
   </style>
+
+    <script>
+        function goToFreeboard(pageNum){
+            location.href="/freeboard?pageNum="+pageNum;
+    </script>
+
 </head>
 <body>
 
@@ -97,6 +103,13 @@
                     </th:block>
                 </thead>
             </table>
+
+            <!-- 페이지 번호 -->
+            <th:block th:each="pageNumber:${#numbers.sequence(session.pageMaker.getStartPage(),session.pageMaker.getEndPage())}">
+                <a th:text="${pageNumber}"></a>
+            </th:block>
+
+
         </div>
         <div class="col-sm-2 sidenav">
             <div class="well">
